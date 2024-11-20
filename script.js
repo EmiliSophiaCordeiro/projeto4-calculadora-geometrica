@@ -3,24 +3,82 @@
 //área do quadrado: lado²
 //área do trapézio: (base maior + base menor) * altura / 2
 //área do círculo: pi * raio² (considere pi = 3.14)
-        //triângulo
-let trianguloBase = parseInt(prompt('digite uma base do triângulo:'))
-let trianguloAltura = parseInt(prompt('digite uma altura do triângulo:'))
+
+//variaveis
+let pi = 3.14
+//triângulo
+function(triangulo){
+  let baseT = prompt("Qual a base do triângulo?")
+  baseT = number(baseT)
+  let alturaT = prompt("Qual a altura do triângulo?")
+  alturaT = number(alturaT)
+        if (baseT * alturaT / 2 > 0) {
+        alert(`A área do triângulo é: ${baseT * alturaT / 2}`)
+    } else {
+        alert("Não há área negativa.")
+    }
+    
 //retângulo
-let retanguloBase = parseInt(prompt('digite uma base do retângulo:'))
-let retanguloAltura = parseInt(prompt('digite uma altura do retângulo:'))
+function(retângulo){
+  let baseR = prompt("Qual a base do retângulo?")
+  baseR = number(baseR)
+  let alturaR = prompt("Qual a altura do retângulo?")
+  alturaR = number(baseR)
+        if (baseR * alturaR > 0) {
+        alert(`A área do retângulo é: ${baseR * alturaR}`)
+    } else {
+        alert("Não há área negativa.")
+    }
 //quadrado
-let quadradoLado = parseInt(prompt('digite um lado do quadrado:'))
+function(quadrado){
+  let ladoQ = prompt("Qual o lado do quadrado?")
+  ladoQ = number(ladoQ)
+        if (ladoQ * ladoQ > 0) {
+        alert(`A área do quadrado é: ${ladoQ * ladoQ}`)
+    } else {
+        alert("Não há área negativa.")
+    }
 //trapézio
-let trapezioBm = parseInt(prompt('digite uma base maior do trapézio:'))
-let trapezioBn = parseInt(prompt('digite uma base menor do trapézio:'))
-let trapezioAltura = parseInt(prompt('digite uma altura do trápezio:'))
+function(trapezio){
+  let baseMaiorT = prompt("Qual a base maior do trapézio?")
+  baseMaiorT = number(baseMaiorT)
+  let baseMenorT = prompt("Qual a base menor do trapézio?")
+  baseMenorT = number(baseMenorT)
+  let alturaT = prompt("Qual a altura do trapézio?")
+  alturaT = number(alturaT)
+        if ((baseMaiorT + baseMenorT) * alturaT /2 > 0) {
+        alert(`A área do trapézio é: ${(baseMaiorT + baseMenorT) * altura / 2}`)
+    } else {
+        alert("Não há área negativa.")
+    }
 //círculo
-let circuloRaio = parseInt(prompt('digite um raio do círculo:'))
-let circuloPi = parseInt(3.14)
+ function(círculo){
+  let raioC = prompt("Qual o raio do círculo?")
+  raioC = number(raioC)
+         if ( pi * (raioC * raioC) > 0) {
+        alert(`A área do círculo é: ${ pi * (raioC * raioC)}`)
+    } else {
+        alert("Não há área negativa.")
+    }
 //resoluçao
-alert(`área do triângulo é: ${trianguloBase*trapezioAltura/2}, \n
-área do retângulo é: ${retanguloBase*retanguloAltura},\n
-área do quadrado é: ${quadradoLado*quadradoLado},\n
-área do trapézio é: ${(trapezioBm+trapezioBn)*trapezioAltura/2},\n
-área do círculo é: ${circuloPi*(circuloRaio*circuloRaio)}`)
+ while (true) {
+    //menu
+         switch (prompt("O que você deseja fazer? \n1 - Àrea do triângulo \n2 - Área do retângulo \n3 - Área do quadrado \n4 - Área do trapézio \n5 - Área do círculo ")) {
+    case "1": 
+        triangulo()
+        break
+    case "2": 
+        retangulo()
+        break
+    case "3": 
+        quadrado()
+        break
+    case "4": 
+      trapezio()
+        break
+        case "5":
+        circulo()       
+        break
+        default:
+}}
+
