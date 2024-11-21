@@ -9,9 +9,9 @@ let pi = 3.14
 //triângulo
 function triangulo (){
   let baseT = prompt("Qual a base do triângulo?")
-  baseT = number(baseT)
+   baseT = number(baseT)
   let alturaT = prompt("Qual a altura do triângulo?")
-  alturaT = number(alturaT)
+   alturaT = number(alturaT)
         if (baseT * alturaT / 2 > 0) {
         alert(`A área do triângulo é: ${baseT * alturaT / 2}`)
     } else {
@@ -80,7 +80,7 @@ function trapezio (){
     case "4": 
       trapezio()
         break
-        case "5":
+    case "5":
         circulo()       
         break
         default:
