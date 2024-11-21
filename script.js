@@ -7,7 +7,7 @@
 //variaveis
 let pi = 3.14
 //triângulo
-function(triangulo){
+function triangulo (){
   let baseT = prompt("Qual a base do triângulo?")
   baseT = number(baseT)
   let alturaT = prompt("Qual a altura do triângulo?")
@@ -17,9 +17,9 @@ function(triangulo){
     } else {
         alert("Não há área negativa.")
     }
-    
+}
 //retângulo
-function(retângulo){
+function retangulo (){
   let baseR = prompt("Qual a base do retângulo?")
   baseR = number(baseR)
   let alturaR = prompt("Qual a altura do retângulo?")
@@ -29,8 +29,9 @@ function(retângulo){
     } else {
         alert("Não há área negativa.")
     }
+}
 //quadrado
-function(quadrado){
+function quadrado (){
   let ladoQ = prompt("Qual o lado do quadrado?")
   ladoQ = number(ladoQ)
         if (ladoQ * ladoQ > 0) {
@@ -38,8 +39,9 @@ function(quadrado){
     } else {
         alert("Não há área negativa.")
     }
+}
 //trapézio
-function(trapezio){
+function trapezio (){
   let baseMaiorT = prompt("Qual a base maior do trapézio?")
   baseMaiorT = number(baseMaiorT)
   let baseMenorT = prompt("Qual a base menor do trapézio?")
@@ -51,8 +53,9 @@ function(trapezio){
     } else {
         alert("Não há área negativa.")
     }
+}
 //círculo
- function(círculo){
+  function circulo (){
   let raioC = prompt("Qual o raio do círculo?")
   raioC = number(raioC)
          if ( pi * (raioC * raioC) > 0) {
@@ -60,6 +63,7 @@ function(trapezio){
     } else {
         alert("Não há área negativa.")
     }
+}
 //resoluçao
  while (true) {
     //menu
@@ -82,3 +86,4 @@ function(trapezio){
         default:
 }}
 
+ 
